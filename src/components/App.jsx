@@ -1,5 +1,7 @@
 import React from 'react';
 import LineGraph from './LineGraph';
+import PieChart from './PieChart';
+import './app.css'
 
 function App() {
 
@@ -7,7 +9,9 @@ function App() {
     <div className="App">
       <center>
       <h1>Data Visualizer</h1>
-      <LineGraph /></center>
+      <LineGraph />
+      <PieChart />
+      </center>
     </div>
   );
 }

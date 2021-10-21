@@ -10,9 +10,19 @@ function LineGraph(){
             labels: ['mon', 'tues', 'wednes', 'thurs', 'fri', 'sat', 'sun'],
             datasets: [
                 {
-                    label: 'idk',
+                    label: 'present',
                     data: [12, 23, 34, 45, 56, 67, 78],
-                    backgroundColor: 'blue',
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)'
+                    ],
+                    borderWidth: 4
+                },
+                {
+                    label: 'absent',
+                    data: [1, 83, 34, 45, 36, 67, 78],
+                    backgroundColor: [
+                        'rgba(250, 99, 13, 0.7)'
+                    ],
                     borderWidth: 4
                 }
             ]
@@ -25,8 +35,22 @@ function LineGraph(){
 
     return(
         <div className="">
-            <div className="">
-                <Line data={chartData}/>
+            <div style={{height:"500px", width:"600px"}}>
+                <Line 
+                    data={chartData}
+                    options={{
+                        responsive:true,
+                        plugins: {
+                            legend: {
+                                position: 'right'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Line Chart'
+                            }
+                        }
+                    }}
+                />
             </div>
         </div>
     );
