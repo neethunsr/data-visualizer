@@ -1,7 +1,8 @@
 import React from 'react';
 import LineGraph from './LineGraph';
 import PieChart from './PieChart';
-import './app.css'
+import '../app.css'
+// import ChooseGraph from './ChooseGraph';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <center>
       <h1>Data Visualizer</h1>
+      {/* <ChooseGraph /> */}
       <LineGraph />
       <PieChart />
       </center>
