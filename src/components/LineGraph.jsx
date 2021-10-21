@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Line } from 'react-chartjs-2';
+import { days, present, absent } from '../data';
 // import { LineChart, LineSeries, PointSeries } from 'reaviz';
 
 function LineGraph(){
@@ -7,23 +8,21 @@ function LineGraph(){
 
     const chart = () => {
         setChartData({
-            labels: ['mon', 'tues', 'wednes', 'thurs', 'fri', 'sat', 'sun'],
+            labels: days,
             datasets: [
                 {
                     label: 'present',
-                    data: [12, 23, 34, 45, 56, 67, 78],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.7)'
-                    ],
-                    borderWidth: 4
+                    data: present,
+                    backgroundColor: 'pink',
+                    borderWidth: 1,
+                    borderColor: 'pink'
                 },
                 {
                     label: 'absent',
-                    data: [1, 83, 34, 45, 36, 67, 78],
-                    backgroundColor: [
-                        'rgba(250, 99, 13, 0.7)'
-                    ],
-                    borderWidth: 4
+                    data: absent,
+                    backgroundColor: 'green',
+                    borderWidth: 1,
+                    borderColor: 'green'
                 }
             ]
         })
