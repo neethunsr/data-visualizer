@@ -1,9 +1,31 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	margin: 10px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+h1 {
+	text-align: center;
 }
 
 .drop-down {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 	margin-top: 50px;
 	width: 400px;
+}
+.choose {
+	align-items: center;
+	width: 1200px;
+}
+.form-select {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: auto;
 }

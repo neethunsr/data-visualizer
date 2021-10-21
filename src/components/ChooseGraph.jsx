@@ -12,7 +12,7 @@ function ChooseGraph(){
     };
 
     return(
-        <div className="">            
+        <div className="choose">            
             <div className="drop-down">
             <Form.Select onChange={changeSelectOptionHandler} aria-label="Default select example">
                 <option>Choose a graph</option>
