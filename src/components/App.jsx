@@ -1,6 +1,7 @@
 import React from 'react';
 import '../app.css'
 import ChooseGraph from './ChooseGraph';
+import DragDrop from './DragDrop';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <h1>Data Visualizer</h1>
       <ChooseGraph />
+      {/* <DragDrop /> */}
     </div>
   );
 }

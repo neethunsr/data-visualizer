@@ -21,7 +21,7 @@ h1 {
 }
 .choose {
 	align-items: center;
-	width: 1200px;
+	/* width: 1200px; */
 }
 .form-select {
 	align-items: center;
