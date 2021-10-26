@@ -1,0 +1,16 @@
+.dropBox {
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: black dashed 1px;
+	/* text-align: center; */
+}
+
+.list-group-horizontal {
+	margin: 20px;
+	justify-content: center;
+	padding: 5px;
+}

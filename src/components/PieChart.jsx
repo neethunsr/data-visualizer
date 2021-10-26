@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import { Pie } from 'react-chartjs-2';
 
-function PieChart(){
+function PieChart(props){
     const [chartData, setChartData] = useState({});
 
     const chart = () => {
         setChartData({
-            labels: ['mon', 'tues', 'wednes', 'thurs', 'fri', 'sat', 'sun'],
+            labels: props.xlabel,
             datasets: [
                 {
-                    label: 'idk',
-                    data: [12, 23, 34, 45, 56, 67, 78],
+                    label: props.label,
+                    data: props.ylabel,
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.7)',
                         'rgba(54, 162, 235, 0.7)',
@@ -31,7 +31,7 @@ function PieChart(){
 
     return(
         <div className="">
-            <div style={{width:"500px", height:"500px"}}>
+            <div style={{width:"600px", height:"500px"}}>
                 <Pie data={chartData} 
                     options={{
                         responsive:true,
@@ -41,7 +41,6 @@ function PieChart(){
                             },
                             title: {
                                 display: true,
-                                text: 'Pie Chart'
                             }
                         }
                     }}

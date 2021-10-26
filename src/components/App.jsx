@@ -9,7 +9,6 @@ function App() {
     <div>
       <h1>Data Visualizer</h1>
       <DragDrop />
-      <ChooseGraph />
     </div>
   );
 }
