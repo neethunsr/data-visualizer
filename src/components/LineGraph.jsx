@@ -13,14 +13,7 @@ function LineGraph(props){
                     backgroundColor: 'green',
                     borderWidth: 1,
                     borderColor: 'pink'
-                },
-                // {
-                //     label: Object.keys(data)[0],
-                //     data: data.absent,
-                //     backgroundColor: 'green',
-                //     borderWidth: 1,
-                //     borderColor: 'green'
-                // }
+                }
             ]
         })
     }

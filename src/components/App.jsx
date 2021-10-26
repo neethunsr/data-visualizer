@@ -1,6 +1,5 @@
 import React from 'react';
-import '../app.css'
-import ChooseGraph from './ChooseGraph';
+import '../app.css';
 import DragDrop from './DragDrop';
 
 function App() {

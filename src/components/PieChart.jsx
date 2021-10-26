@@ -9,7 +9,7 @@ function PieChart(props){
             labels: props.xlabel,
             datasets: [
                 {
-                    label: props.label,
+                    label: props.xlabel,
                     data: props.ylabel,
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.7)',
@@ -37,10 +37,12 @@ function PieChart(props){
                         responsive:true,
                         plugins: {
                             legend: {
+                                display: true,
                                 position: 'right'
                             },
                             title: {
                                 display: true,
+                                text: props.title
                             }
                         }
                     }}
