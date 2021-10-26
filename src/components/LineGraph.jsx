@@ -35,6 +35,7 @@ function LineGraph(props){
                             },
                             title: {
                                 display: true,
+                                text: props.title
                             }
                         }
                     }}
