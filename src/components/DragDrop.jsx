@@ -56,7 +56,7 @@ export const DragDrop = () => {
 					<LineGraph
 						xlabel={xLabel}
 						ylabel={yLabel}
-						label={x}
+						label={y}
 						title={x.concat("-", y, " Chart")}
 					/>
 				)}
